@@ -162,7 +162,7 @@ random, except for randu, which appears as parallel planes.
 The antiview rotating feature works slowly because of the
 large number of dots in the cube.
 
-./tstgsl.sh
+./gslcube.sh
 
 --------
 
