@@ -1,7 +1,7 @@
 #!/usr/bin/make
 
-# lfsrdots.mak Version 0.1.0. Compile lfsrdots.c.
-# Copyright (C) 2020   aquila57 at github.com
+# diedots.mak Version 1.0.0. Compile diedots.c.
+# Copyright (C) 2019-2020 aquila57 at github.com
 
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -20,19 +20,19 @@
 # 	59 Temple Place - Suite 330
 # 	Boston, MA  02111-1307, USA.
 
-OBJ=lfsrdots.o
+OBJ=diedots.o
 
 CC=gcc
 
 CFLAGS=-c -Wall -O2 -I/usr/X11R6/include/X11
 
-LDFLAGS=-L. -leegl -L/usr/X11R6/lib -lX11
+LDFLAGS=-L. -lvisual -L/usr/X11R6/lib -lX11 -lm
 
-lfsrdots:			$(OBJ)
-		$(CC) -Wall -O2 $(OBJ) -o lfsrdots $(LDFLAGS)
+diedots:			$(OBJ)
+		$(CC) -Wall -O2 $(OBJ) -o diedots $(LDFLAGS)
 
-lfsrdots.o:			lfsrdots.c
-		$(CC) $(CFLAGS) lfsrdots.c
+diedots.o:			diedots.c
+		$(CC) $(CFLAGS) diedots.c
 
 clean:
-		rm -f $(OBJ) lfsrdots
+		rm -f $(OBJ) diedots

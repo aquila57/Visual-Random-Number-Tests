@@ -168,15 +168,26 @@ large number of dots in the cube.
 
 Dieharder suit of random number generators, 2D test.
 
-Run dietst.sh to produce a 512x512 square canvas of dynamic
+Run diedots.sh to produce a 512x512 square canvas of dynamic
 random dots from dieharder.  The input parameter is the
-dieharder number of the generator.  The program continues to run
-until you press the 'q' key.  The 2D population of dots appear
-to be uniformly random on every generator except randu.
+dieharder number of the generator.
 
-./tstdie.sh 053
+Dieharder has a limit of how many random numbers it can
+generate.  This test produces 4 million dots, and then
+pauses, until you press the 'q' key to quit.  You will notice
+that the screen appears to freeze after 4 million dots.
+
+The 2D population of dots appear to be uniformly random on
+every generator except randu and uni.  The randu generator
+produces diagonal stripes.  The uni generator produces
+a small dark square in the upper left quadrant of the canvas.
+The XOR generator doesn't work in dieharder, and so end of
+file is reached before the X Windows screen opens.
+
+./diedots.sh 053
 
 In this example, the test is run for the taus2 generator.
+Press 'q' when the screen pauses.
 
 To see a list of dieharder random number generators, type:
 

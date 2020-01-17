@@ -16,5 +16,6 @@ make -f sinegen.mak clean
 make -f srandgen.mak clean
 make -f gslgen.mak clean
 make -f gendie.mak clean
+make -f diedots.mak clean
 rm -f coords.txt
 rm -f cube_frame.off

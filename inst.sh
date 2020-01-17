@@ -16,3 +16,4 @@ make -f sinegen.mak
 make -f srandgen.mak
 make -f gslgen.mak
 make -f gendie.mak
+make -f diedots.mak

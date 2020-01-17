@@ -1,6 +1,6 @@
 /*
-eegldots.c Version 1.0.0. Paint random dots on an X Windows screen
-Copyright (C) 2016   aquila62 at github.com
+eegldots.c Version 0.1.0. Paint random dots on an X Windows screen
+Copyright (C) 2020   aquila57 at github.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -245,7 +245,6 @@ int main()
    /* Start X Windows and open up a canvas (screen) */
    initx(xx);
    /* initialize the eegl random number generator */
-   ee = (eefmt *) eeglinit();
    ee = (eefmt *) eeglinit();
    seed = eegl(ee);
    gsl_rng_env_setup();
