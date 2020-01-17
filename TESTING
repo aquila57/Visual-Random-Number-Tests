@@ -1,0 +1,214 @@
+Instructions for running the visual tests in this repository.
+
+eegl64 random number generator, 2D test.
+
+Run eegldots to produce a 512x512 square canvas of dynamic
+random dots.  The program continues to run until you press
+the 'q' key.  The 2D population of dots appear to be uniformly
+random.
+
+./eegldots
+
+--------
+
+eegl64 random number generator, 3D test.
+
+Run eegltst.sh to produce a 32x32x32 pixel cube of random
+dots.  The 3D population of dots appear to be uniformly
+random.  The antiview rotating feature works slowly because
+of the large number of dots in the cube.
+
+./eegltst.sh
+
+--------
+
+Fibonacci random number generator, 2D test.
+
+Run fibodots to produce a 512x512 square canvas of dynamic
+random dots.  The program continues to run until you press
+the 'q' key.  The fibonacci generator fails the visual test.
+The 2D population of dots appear as several thick stripes.
+
+./fibodots
+
+--------
+
+Fibonacci random number generator, 3D test.
+
+Run fibotst.sh to produce a 32x32x32 pixel cube of random
+dots.  The fibonacci generator fails the visual test.
+The 3D population of dots appear as four planes.
+The antiview rotating feature works slowly because of the
+large number of dots in the cube.  Rotate the cube by
+pressing the left mouse button and moving the cursor.
+
+./fibotst.sh
+
+--------
+
+RANDU random number generator, 2D test.
+
+Run rudots to produce a 512x512 square canvas of dynamic
+random dots.  The program continues to run until you press
+the 'q' key.  The RANDU generator fails the visual test.
+The 2D population of dots appear as stripes.
+
+./rudots
+
+--------
+
+RANDU random number generator, 3D test.
+
+Run rutst.sh to produce a 32x32x32 pixel cube of random
+dots.  The RANDU generator fails the visual test.
+The 3D population of dots appear as parallel planes.
+The antiview rotating feature works slowly because of the
+large number of dots in the cube.
+
+./rutst.sh
+
+--------
+
+LFSR random number generator, 2D test.
+
+Run lfsrdots to produce a 512x512 square canvas of dynamic
+random dots.  The program continues to run until you press
+the 'q' key.  The LFSR generator fails the visual test.
+The 2D population of dots appear as two thin lines.
+
+./lfsrdots
+
+--------
+
+LFSR random number generator, 3D test.
+
+Run lfsrtst.sh to produce a 32x32x32 pixel cube of random
+dots.  The LFSR generator fails the visual test.
+The 3D population of dots appear as four parallel lines.
+To rotate the cube, press the left mouse button and drag
+the cursor around the picture.
+
+./lfsrtst.sh
+
+--------
+
+Sine wave random number generator, 2D test.
+
+Run sinedots to produce a 512x512 square canvas of dynamic
+random dots.  The program continues to run until you press
+the 'q' key.  The sine wave generator fails the visual test.
+The 2D population of dots appear more active on the right
+and bottom edges.
+
+./sinedots
+
+--------
+
+Sine wave random number generator, 3D test.
+
+Run sinetst.sh to produce a 32x32x32 pixel cube of random
+dots.  The sine wave generator fails the visual test.
+The 3D population of dots appear as an inner cube inside a
+surrounding cube.  The antiview rotating feature works slowly
+because of the large number of dots in the cube.
+
+./sinetst.sh
+
+--------
+
+Subrand random number generator, 2D test.
+
+Run sranddots to produce a 512x512 square canvas of dynamic
+random dots.  The program continues to run until you press
+the 'q' key.  The 2D population of dots appear to be uniformly
+random.
+
+./sranddots
+
+--------
+
+Subrand random number generator, 3D test.
+
+Run srandtst.sh to produce a 32x32x32 pixel cube of random
+dots.  The 3D population of dots appear to be uniformly
+random.  The antiview rotating feature works slowly because
+of the large number of dots in the cube.
+
+./srandtst.sh
+
+--------
+
+GNU Scientific Library random number generators, 2D test.
+
+Run gsltst.sh to produce a 512x512 square canvas of dynamic
+random dots from the GSL library.  The input parameter is
+the GSL name of the generator.  The program continues to run
+until you press the 'q' key.  The 2D population of dots appear
+to be uniformly random on every generator except randu.
+
+./tstgsl.sh
+
+To see a list of GSL random number generators, type:
+
+./tstgsl.sh ?
+
+--------
+
+GNU Scientific Library random number generators, 3D test.
+
+Run gsltst.sh to produce a 32x32x32 pixel cube of random
+dots.  The 3D population of dots appear to be uniformly
+random, except for randu, which appears as parallel planes.
+The antiview rotating feature works slowly because of the
+large number of dots in the cube.
+
+./tstgsl.sh
+
+--------
+
+Dieharder suit of random number generators, 2D test.
+
+Run dietst.sh to produce a 512x512 square canvas of dynamic
+random dots from dieharder.  The input parameter is the
+dieharder number of the generator.  The program continues to run
+until you press the 'q' key.  The 2D population of dots appear
+to be uniformly random on every generator except randu.
+
+./tstdie.sh 053
+
+In this example, the test is run for the taus2 generator.
+
+To see a list of dieharder random number generators, type:
+
+./dieharder -g -l
+
+--------
+
+Dieharder suit of random number generators, 3D test.
+
+Run dietst.sh to produce a 32x32x32 pixel cube of random
+dots.  The 3D population of dots appear to be uniformly
+random, except for randu, which appears as parallel planes.
+The antiview rotating feature works slowly because of the
+large number of dots in the cube.
+
+./tstdie.sh 053
+
+In this example, the test is run for the taus2 generator.
+
+To see a list of dieharder random number generators, type:
+
+./dieharder -g -l
+
+--------
+
+Submit more random number generators.
+
+If you have a random number generator that is not included
+in this repository, you are welcome to add more visual test
+programs to this repository.
+
+For more information about this repository, read README.md
+and INSTALL.
+
+--------

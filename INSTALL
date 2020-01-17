@@ -1,0 +1,39 @@
+Install instructions for visual tests in this repository:
+
+The following dependencies are used by the programs in this
+repository.
+
+GNU Scientific Library.
+
+sudo apt-get install libgsl2
+sudo apt-get install libgsl-dev
+sudo apt-get install gsl-ref-html
+
+Dieharder package.
+
+sudo apt-get install dieharder
+sudo apt-get install libdieharder-dev
+sudo apt-get install libdieharder3
+
+Antiprism package to calculate and display OpenGL polygons.
+
+Download Antiprism from:
+
+http://www.antiprism.com/download/index.html
+
+--------------------------------------------
+
+Make shell scripts executable.
+
+chmod 755 *.sh
+
+Next compile the programs.
+
+./inst.sh
+
+To de-install the runs test up and down repository:
+
+./deinst.sh
+
+To see how to run visual tests, read TESTING.
+
