@@ -22,6 +22,28 @@ of the large number of dots in the cube.
 
 --------
 
+etaus random number generator, 2D test.
+
+Run etausdots to produce a 512x512 square canvas of dynamic
+random dots.  The program continues to run until you press
+the 'q' key.  The 2D population of dots appear to be uniformly
+random.
+
+./etausdots
+
+--------
+
+etaus random number generator, 3D test.
+
+Run etaustst.sh to produce a 32x32x32 pixel cube of random
+dots.  The 3D population of dots appear to be uniformly
+random.  The antiview rotating feature works slowly because
+of the large number of dots in the cube.
+
+./etaustst.sh
+
+--------
+
 Fibonacci random number generator, 2D test.
 
 Run fibodots to produce a 512x512 square canvas of dynamic
