@@ -4,7 +4,11 @@ The visual random number test shows whether random number
 generators appear to be uniformly distributed on a 2D or 3D
 graph.
 
-The test uses a random number generator to calculate
+Another type of test, the worm random walk, is in a subdirectory,
+called Worm.  Read the README.md file in that directory and
+follow the installation instructions given there.
+
+The visual test uses a random number generator to calculate
 random cartesian coordinates on a graph.  Each coordinate
 is a separate generation of the generator.  First the
 x coordinate is generated.  Then the y coordinate is

@@ -1,5 +1,8 @@
 Install instructions for visual tests in this repository:
 
+Installation instructions for the worm random walk are givin
+in the Worm subdirectory.
+
 The following dependencies are used by the programs in this
 repository.
 

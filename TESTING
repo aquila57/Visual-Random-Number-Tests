@@ -1,5 +1,8 @@
 Instructions for running the visual tests in this repository.
 
+See the Worm subdirectory for instructions on running the worm
+random walk test.
+
 eegl64 random number generator, 2D test.
 
 Run eegldots to produce a 512x512 square canvas of dynamic
