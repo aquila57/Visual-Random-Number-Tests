@@ -13,6 +13,10 @@ Press 'r' to re-run the race.
 Press 'q' or escape to quit the race, either during or after
 a race.
 
+The race has been slowed down by nanosleep(), so that it is easier
+to watch.  Notice the optical illusion, where the column of pixels
+appear to be rotating in a counter clockwise direction.
+
 There are three versions of the race program in this directory,
 depending on which random number generator is being used.
 
