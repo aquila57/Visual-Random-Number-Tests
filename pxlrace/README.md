@@ -26,7 +26,7 @@ eegl64 generator.
 
 To run the race, type:
 
-./pxlrace
+./eeglrace
 
 -------------------------------------------------------------------
 
