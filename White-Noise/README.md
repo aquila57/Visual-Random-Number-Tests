@@ -57,3 +57,15 @@ etausunif.c - generate a 32 bit fraction between zero and one.
 
 --------------------------------------------------------------
 
+Installation instructions.
+
+chmod 700 *.sh
+
+./inst.sh
+
+To de-install this this directory,
+
+./deinst.sh
+
+--------------------------------------------------------------
+
